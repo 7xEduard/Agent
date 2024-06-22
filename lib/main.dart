@@ -1,4 +1,5 @@
 import 'package:agent/Screens/login_screen.dart';
+import 'package:agent/Screens/profile_screen.dart';
 import 'package:agent/Screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
@@ -18,9 +19,10 @@ class Agent extends StatelessWidget {
      routes: {
       'Splash': (context) => const SplashScreen(),
       'Login': (context) =>  LoginScreen(),
+      'Profile': (context) => const ProfileScreen(),
      },
       debugShowCheckedModeBanner: false,
-      initialRoute: 'Splash',
+      initialRoute: 'Profile',
     );
   }
 }
